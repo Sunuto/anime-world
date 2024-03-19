@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+   min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.35)), url(1.png); 
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+
+}
+.navbar{
+    padding: 2% 6%;
+    display: flex;
+    align-items:center;
+    float: right;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 20px;
+    position: relative;
+}
+.logo{
+    padding: 2% 6%;
+    width:15%;
+    cursor: pointer;
+
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: aqua;
+    transition: 0.5s;
+}
+.navbar ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color:aqua;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar ul li a:hover::after{
+    width: 100%;
+}
+.navbar ul li a:active{
+    color: red;  
+    transition: 0.5s; 
+}
+
+.navbar ul li a:active::after{
+background-color:red;
+transition: none;
+}
+
+.text{
+    width: 90%;
+    color: #ffff;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text h1{ 
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 62px;
+} 
+.first{ 
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+
+    
+}
+.first:hover{
+    cursor: pointer;
+    background-color: rgb(232, 44, 44);
+    transition: 1s;
+        
+}
+.first:active{
+    color: black;
+    
+}
+
+.text p{
+    margin: 10px 0 40px;
+    color: white;
+}
+
+/* Anime list */
+.list{
+    width: 80%;
+     margin: auto;
+    text-align: center;
+    padding-top: 100px ;
+}
+h1{
+    font-size: 36px;
+    font-weight: 700;
+}
+p{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 31%;
+    background-color: #f7e6e6;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    
+}
+.col p{
+    display: none;
+}
+.col:hover p{
+    display: block;
+}
+.pic{
+    width: 150px;
+    height: 100px;
+}
+
+/* @media(max-width: 700px){
+    .text h1{ 
+        font-size: 20px;
+    } 
+    .navbar ul li{
+        display: block;
+        
+    }
+    .navbar{
+        position: absolute;
+        background: #f44336 ;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+
+        
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
